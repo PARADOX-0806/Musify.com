@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+    <link rel="icon" href="./output/favicon/musify.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="background.css">
+    <script src="https://kit.fontawesome.com/da52920a94.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background-container">
+        <img id="background-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+    <div class="app-container">
+        <header class="header">
+            <!-- <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div> -->
+            <div class="logo">
+                <h1><a href="#hidden-nav"><img src="./output/favicon/musify.png" alt=""> Musify</a></h1>
+            </div>
+            <div class="favs">
+                <h4>
+                    Favourites
+                </h4>
+            </div>
+            <i class="fas fa-search search-ico sico"></i>
+            <input type="text" placeholder="             Search for songs, artists, albums...">
+            <i class="fas fa-microphone mic-ico mico"></i>
+            <i class="fa-solid fa-bell bell" style="color: #ffffff;"></i>
+            <div id="login">
+                <h3>User </h3>
+                <img id= "user"src="./output/images/user-modified.png" alt=" user image">
+            </div>
+        </header>
+        <div class="sidebar">
+            
+            <nav>
+                <ul>
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./index.html">Browse</a></li>
+                    <li><a href="./index.html">Library</a></li>
+                    <li><a href="./index.html">Search</a></li>
+                </ul>
+            </nav>
+            <div class="playlists">
+                <h2><a href="#">Playlists</a></h2>
+                <ul>
+                    <li><a href="top-hits.html">Top Hits</a></li>
+                    <li><a href="workout.html">Workout</a></li>
+                    <li><a href="chill.html">Chill</a></li>
+                </ul>
+            </div>
+            <div id="hidden-nav">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Browse</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </nav>
+                <div class="playlists">
+                    <h2><a href="./playlist.html">Playlists</a></h2>
+                    <ul>
+                        <li><a href="top-hits.html">Top Hits</a></li>
+                        <li><a href="workout.html">Workout</a></li>
+                        <li><a href="chill.html">Chill</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <main class="main-content">
+            
+            <div class="content">
+                <!-- Album Card -->
+                <section class="album-card" style="max-width: 540px;">
+                    
+                      <div class="albumcover">
+                        <img src="./output/images/COLD PLAY.jpeg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      
+                        <div class="card-body">
+                          <h2 class="card-title">ColdPlay</h2>
+                          <h5 class="card-title">British Band</h5>
+                          <p class="card-text">Coldplay is a British music band that has enjoyed continuous success since their
+                            inception in 1996 through their intelligent and soulful songs. The band members are
+                            Chris Martin (lead vocals), Jonny Buckland (lead guitar), Guy Berryman (bass guitar)
+                            and Will Champion (drums).</p>
+                           <button>Play All</button> <a href="#">Follow</a>
+                          <p class="card-text"><small class="text-body-secondary">247 Tracks | 128 Albums</small></p>
+                        </div>
+                      
+                    
+                  </section>
+                  <!-- Album List -->
+                  <div class="album-list">
+                 
+                   
+                    <ol type="1" class="songlist">
+                        <li class="songitem">
+                            <div>
+                                <img src="./output/images/animal jason.webp" alt="Song Image">
+                                <div class="song-info">
+                                    <h3>Animal</h3>
+                                    <p>Jason</p>
+                                </div>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                                <img src="./output/images/baarish.jpeg" alt="Song Image">
+                                <div class="song-info">
+                                    <h3>baarish</h3>
+                                    <p>Atif Aslam</p>
+                                </div>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                            <img src="./output/images/aleksandr-popov-hTv8aaPziOQ-unsplash.jpg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Rock</h3>
+                                <p>Aleksandr-popov</p>
+                            </div>
+                        </div>     
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                            <img src="./output/images/ARIJIT.webp" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Hum Mar jayenge</h3>
+                                <p>Arjit Singh</p>
+                            </div>
+                        </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                            <img src="./output/images/Galiyan 2.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Galiyan</h3>
+                                <p>Arjit Singh</p>
+                            </div>
+                        </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                            <img src="./output/images/guru-randhawa-red-jacket-g2s9rthapd9hbjzw.jpg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Red Jacket</h3>
+                                <p>Guru Randhawa</p>
+                            </div>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                            <img src="./output/images/Pehle bhi 1.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Pehle bhi</h3>
+                                <p>Raj Shekhar and Vishal Mishra
+                                </p>
+                                </div>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                            <img src="./output/images/Besharam_Rang_.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Besharam_Rang</h3>
+                                <p>Vishal–Shekhar</p>
+                            </div>
+                        </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                            <img src="./output/images/animal jason.webp" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Animal</h3>
+                                <p>Jason</p>
+                            </div>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                            <img src="./output/images/baarish.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>baarish</h3>
+                                <p>Atif Aslam</p>
+                            </div>
+                        </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                            <img src="./output/images/aleksandr-popov-hTv8aaPziOQ-unsplash.jpg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Rock</h3>
+                                <p>Aleksandr-popov</p>
+                            </div>
+                        </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                            <img src="./output/images/ARIJIT.webp" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Hum Mar jayenge</h3>
+                                <p>Arjit Singh</p>
+                            </div>
+                        </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                            <img src="./output/images/Galiyan 2.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Galiyan</h3>
+                                <p>Arjit Singh</p>
+                            </div>
+                        </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                            <img src="./output/images/guru-randhawa-red-jacket-g2s9rthapd9hbjzw.jpg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Red Jacket</h3>
+                                <p>Guru Randhawa</p>
+                                </div>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                            <img src="./output/images/Pehle bhi 1.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Pehle bhi</h3>
+                                <p>Raj Shekhar and Vishal Mishra
+                                </p>
+                                </div>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="songitem">
+                            <div>
+                            <img src="./output/images/Besharam_Rang_.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Besharam_Rang</h3>
+                                <p>Vishal–Shekhar</p>
+                            </div>
+                        </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                    </ol>
+                </div>
+                <!-- Playlist Section -->
+                <aside class="queue1">
+                 
+                    <div class="head">
+                        <h1>Similar Artist</h1>
+                        <!-- <h4>
+                            <a href="#queue-box">Queue <i class="fas fa-chevron-circle-down"></i></a>
+                        </h4> -->
+                        <span class="queue">
+                            <label for="queue-checkbox"> View All  <i class="fas fa-chevron-circle-down"></i></label>
+                            <input type="checkbox" id="queue-checkbox">
+                            <div class="dropdown">
+                                <div class="dropdownitem">
+                                    <p> <a href="./Playlist.html">Playlist</a></p>
+                                </div>
+                                <hr>
+                                <div class="dropdownitem">
+                                    <p><a href="#" ">Favourite Songs</a></p>
+                                </div>
+                                
+                            </div>
+                            
+                        </span>
+                    </div>
+                    <ul class="song-list">
+                        <li class="song-item">
+                            <img src="./output/images/animal jason.webp" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Animal</h3>
+                                <p>Jason</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/baarish.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>baarish</h3>
+                                <p>Atif Aslam</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/aleksandr-popov-hTv8aaPziOQ-unsplash.jpg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Rock</h3>
+                                <p>Aleksandr-popov</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/ARIJIT.webp" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Hum Mar jayenge</h3>
+                                <p>Arjit Singh</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/Galiyan 2.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Galiyan</h3>
+                                <p>Arjit Singh</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/guru-randhawa-red-jacket-g2s9rthapd9hbjzw.jpg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Red Jacket</h3>
+                                <p>Guru Randhawa</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/Pehle bhi 1.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Pehle bhi</h3>
+                                <p>Raj Shekhar and Vishal Mishra
+                                </p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/Besharam_Rang_.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Besharam_Rang</h3>
+                                <p>Vishal–Shekhar</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                    </ul>
+                </aside>
+                <aside class="queue2">
+                 
+                    <div class="head">
+                        <h1>Recently Played</h1>
+                        
+                        <span class="queue">
+                            <label for="queue-checkbox"> View All </label>
+                            <input type="checkbox" id="queue-checkbox">
+                            <div class="dropdown">
+                                <div class="dropdownitem">
+                                    <p> <a href="./Playlist.html">Playlist</a></p>
+                                </div>
+                                <hr>
+                                <div class="dropdownitem">
+                                    <p><a href="#" ">Favourite Songs</a></p>
+                                </div>
+                                
+                            </div>
+                            
+                        </span>
+                    </div>
+                    <ul class="song-list">
+                        <li class="song-item">
+                            <img src="./output/images/animal jason.webp" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Animal</h3>
+                                <p>Jason</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/baarish.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>baarish</h3>
+                                <p>Atif Aslam</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/aleksandr-popov-hTv8aaPziOQ-unsplash.jpg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Rock</h3>
+                                <p>Aleksandr-popov</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/ARIJIT.webp" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Hum Mar jayenge</h3>
+                                <p>Arjit Singh</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/Galiyan 2.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Galiyan</h3>
+                                <p>Arjit Singh</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/guru-randhawa-red-jacket-g2s9rthapd9hbjzw.jpg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Red Jacket</h3>
+                                <p>Guru Randhawa</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/Pehle bhi 1.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Pehle bhi</h3>
+                                <p>Raj Shekhar and Vishal Mishra
+                                </p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/Besharam_Rang_.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Besharam_Rang</h3>
+                                <p>Vishal–Shekhar</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </main>
+        <!-- Player Section -->
+        <footer class="now-playing">
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+            <div class="album-cover">
+                <img src="./output/images/Galiyan 2.jpeg" alt="Album Cover">
+            </div>
+            <div class="song-info">
+                <h2>Galliyan (गलियां)</h2>
+                <h4>Ankit Tiwari</h4>
+            </div>
+            <div class="player">   
+                
+                
+                <audio controls autoplay muted id="song">
+                    <source src="./songs/music.mp3" type="audio/mp3">
+                </audio>
+                
+            
+            <button class="control-button prev"><i class="fa-solid fa-backward" style="color: #ffffff;"></i></button>
+            <button class="control-button next"><i class="fa-solid fa-forward" style="color: #ffffff;"></i></button>
+            
+            <button class="control-button shuffle"><i class="fa-solid fa-shuffle" style="color: #ffffff;"></i></button>
+            <button class="control-button"><i class="fa-solid fa-clipboard-list" style="color: #ffffff;"></i></button>
+        </div> 
+        </footer>
+    </div>
+    </div>
+    <!-- <script src="./songs.js"></script> -->
+</body>
+</html>

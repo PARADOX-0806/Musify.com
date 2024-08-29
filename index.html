@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musify</title>
+    <link rel="icon" href="./output/favicon/musify.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="background.css">
+    <script src="https://kit.fontawesome.com/da52920a94.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background-container">
+        <img id="background-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+    <div class="app-container">
+        <header class="header">
+            
+            <div class="logo">
+                <h1><a href="#hidden-nav"><img src="./output/favicon/musify.png" alt=""> Musify</a></h1>
+            </div>
+            <div class="favs">
+                <h4>
+                    Favourites
+                </h4>
+            </div>
+            <i class="fas fa-search search-ico sico"></i>
+            <input type="text" placeholder="             Search for songs, artists, albums...">
+            <i class="fas fa-microphone mic-ico mico"></i>
+            <i class="fa-solid fa-bell bell" style="color: #ffffff;"></i>
+            <div id="login">
+                <h3>User </h3>
+                <img id= "user"src="./output/images/user-modified.png" alt=" user image">
+            </div>
+        </header>
+        <aside class="sidebar">
+            
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Browse</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </nav>
+            <div class="playlists">
+                <h2><a href="./Playlist.html">Playlists</a></h2>
+                <ul>
+                    <li><a href="./Playlist.html">Top Hits</a></li>
+                    <li><a href="./Playlist.html">Workout</a></li>
+                    <li><a href="./Playlist.html">Chill</a></li>
+                </ul>
+            </div>
+            <div id="hidden-nav">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Browse</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </nav>
+                <div class="playlists">
+                    <h2><a href="./Playlist.html">Playlists</a></h2>
+                    <ul>
+                        <li><a href="./Playlist.html">Top Hits</a></li>
+                        <li><a href="./Playlist.html">Workout</a></li>
+                        <li><a href="./Playlist.html">Chill</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main class="main-content">
+            
+            <div class="content">
+                <!-- carousel -->
+                <section class="outer">
+                    <div class="carousel">
+                        <img src="./output/images/JUSTIN.png">
+                        <img src="./output/images/JUSTIN (1).png">
+                        <img src="./output/images/JUSTIN (2).png">
+                    </div>
+                </section>
+                <!-- Main content Row -->
+                <div class="latest">
+                    <div class="heading">
+                        <h1>Popular Artists</h1>
+                    </div>
+                    <section class="artist-row">
+                        <a href="./Playlist.html" class="artist-item">
+                            <img src="./output/images/ARIJIT.webp" alt="Artist 1">
+                            <h3>Arjit Singh</h3>
+                        </a>
+                        <a href="./Playlist.html" class="artist-item">
+                            <img src="./output/images/COLD PLAY.jpeg" alt="Artist 2">
+                            <h3>COLD PLAY</h3>
+                        </a>
+                        <a href="./Playlist.html" class="artist-item">
+                            <img src="./output/images/DRAKE.jpeg" alt="Artist 3">
+                            <h3>DRAKE</h3>
+                        </a>
+                        <a href="./Playlist.html" class="artist-item">
+                            <img src="./output/images/BADSHAH.jpg" alt="Artist 3">
+                            <h3>BADSHAH</h3>
+                        </a>
+                        <a href="./Playlist.html" class="artist-item">
+                            <img src="./output/images/JUSTIN (1).png" alt="Artist 3">
+                            <h3>JUSTIN</h3>
+                        </a>
+                    </section>
+                    <div class="heading">
+                        <h1>Latest Release</h1>
+                    </div>                  
+                    <section class="latest-content">
+                        <div class="card">
+                            <div>
+                                <img src="./output/images/BADSHAH.jpg">
+                                <div class="play-button">
+                                    <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                                </div>
+                            </div>
+                            <div class="songs">
+                                <h3>
+                                    Move Your Lakk
+                                </h3>
+                                <p>
+                                    2017
+                                </p>
+                            </div>
+                            <div class="options">
+                                <label for="latest-release-checkbox"><i class="fas fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox">
+                                <div class="latest-dropdown">
+                                    <div class="ditem">
+                                        <p> <a href="Playlist.html"><i class="fas fa-play-circle">   Play
+                                                Now</i></a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="ditem">
+                                        <p><a href="#" "><i class="fa-solid fa-plus">   Add To Queue</i></a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="ditem">
+                                        <p><a href="#" "><i class="fa-solid fa-heart">   Add To Favourites</i></a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="ditem">
+                                        <p><a href="#"><i class="fa-solid fa-circle-info">   Get Info</i></a></p>
+                                    </div>
+                                </div>
+                                <p>
+                                    3:15
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="./output/images/Rolling in deep.jpeg">
+                                <div class="play-button">
+                                    <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                                </div>
+                            </div>
+                            <div class="songs">
+                                <h3>
+                                   ROLLING IN THE DEEP
+                                </h3>
+                                <p>
+                                    2010
+                                </p>
+                            </div>
+                            <div class="options">
+                                <label for="latest-release-checkbox2"><i class="fas fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox2">
+                                <div class="latest-dropdown">
+                                    <div class="ditem">
+                                        <p> <a href="Playlist.html"><i class="fas fa-play-circle">   Play
+                                                Now</i></a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="ditem">
+                                        <p><a href="#" "><i class="fa-solid fa-plus">   Add To Queue</i></a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="ditem">
+                                        <p><a href="#" "><i class="fa-solid fa-heart">   Add To Favourites</i></a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="ditem">
+                                        <p><a href="#"><i class="fa-solid fa-circle-info">   Get Info</i></a></p>
+                                    </div>
+                                </div>
+                                <p>
+                                    3:48
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="./output/images/Barish 1.jpeg">
+                                <div class="play-button">
+                                    <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                                </div>
+                            </div>
+                            <div class="songs">
+                                <h3>
+                                    Baarish Ban Jaana
+                                </h3>
+                                <p>
+                                    2022  
+                                </p>
+                            </div>
+                            <div class="options">
+                                <label for="latest-release-checkbox3"><i class="fas fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox3">
+                                <div class="latest-dropdown">
+                                    <div class="ditem">
+                                        <p> <a href="Playlist.html"><i class="fas fa-play-circle">   Play
+                                                Now</i></a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="ditem">
+                                        <p><a href="#" "><i class="fa-solid fa-plus">   Add To Queue</i></a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="ditem">
+                                        <p><a href="#" "><i class="fa-solid fa-heart">   Add To Favourites</i></a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="ditem">
+                                        <p><a href="#"><i class="fa-solid fa-circle-info">   Get Info</i></a></p>
+                                    </div>
+                                </div>
+                                <p>
+                                    4:12
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div>
+                                <img src="./output/images/Besharam_Rang_.jpeg">
+                                <div class="play-button">
+                                    <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                                </div>
+                            </div>
+                            <div class="songs">
+                                <h3>
+                                    Besharam Rang
+                                </h3>
+                                <p>
+                                    2023
+                                </p>
+                            </div>
+                            <div class="options">
+                                <label for="latest-release-checkbox4"><i class="fas fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox4">
+                                <div class="latest-dropdown">
+                                    <div class="ditem">
+                                        <p> <a href="Playlist.html"><i class="fas fa-play-circle">   Play
+                                                Now</i></a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="ditem">
+                                        <p><a href="#" "><i class="fa-solid fa-plus">   Add To Queue</i></a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="ditem">
+                                        <p><a href="#" "><i class="fa-solid fa-heart">   Add To Favourites</i></a></p>
+                                    </div>
+                                    <hr>
+                                    <div class="ditem">
+                                        <p><a href="#"><i class="fa-solid fa-circle-info">   Get Info</i></a></p>
+                                    </div>
+                                </div>
+                                <p>
+                                    4:05
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Music Theme -->
+                    <div class="themes">
+                        <div class="outdiv">
+                            <div class="indiv">
+                                <span>PARTY</span>
+                            </div>
+                        </div>
+                        <div class="outdiv">
+                            <div class="indiv">
+                                <span>ELECTRONIC</span>
+                            </div>
+                        </div>
+                        <div class="outdiv">
+                            <div class="indiv">
+                                <span>TRAVEL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fusions">
+                        <div class="stations">
+                            <div id="purple1">
+                                <div id="purple2">
+                                    <div id="purple3">
+                                        <img src="./Images/fusions.webp">
+                                        <p>Fusions</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tmain">
+                            <div class="tcontent">
+                                <img src="./Images/Vibe img.jpeg">
+                                <p>Vibe</p>
+                            </div>
+                            <div class="tcontent">
+                                <img src="./Images/rock img.webp">
+                                <p>Rock</p>
+                            </div>
+                            <div class="tcontent">
+                                <img src="./Images/love img.jpeg">
+                                <p>Love</p>
+                            </div>
+                            <div class="tcontent">
+                                <img src="./Images/pop img.jpeg">
+                                <p>Pop</p>
+                            </div>
+                            <!-- <div class="tcontent">
+                                <img src="./Images/retro img.jpeg">
+                                <p>Retro</p>
+                            </div>
+                            <div class="tcontent">
+                                <img src="./Images/gym img.jpeg">
+                                <p>GYM</p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- latest english section -->
+                    <div class="heading lang-content">
+                        <h1>Latest English</h1> 
+                    </div>
+                    <section class="lang">
+                        
+                        <div class="lang-content">
+                            <div>
+                                <img src="./output/images/gold shit.webp">
+                                <p>Gold Shit</p>
+                                <p>2023</p>
+                            </div>
+                            <div>
+                                <img src="./output/images/COLD PLAY.jpeg">
+                                <p>Cold Play</p>
+                                <p>2024</p>
+                            </div>
+                            <div>
+                                <img src="./output/images/BIG TRANS.webp">
+                                <p>Big Trans</p>
+                                <p>2023</p>
+                            </div>
+                            <div>
+                                <img src="./output/images/give me 3.jpeg">
+                                <p>Give Me</p>
+                                <p>2022</p>
+                            </div>
+                            <div>
+                                <img src="./output/images/perfect.jpg">
+                                <p>Perfect</p>
+                                <p>2023</p>
+                            </div>
+                            
+                        </div>
+                    </section>
+                    <!-- this is the hindi section -->
+                    <div class="heading lang-content">
+                        <h1>Latest Hindi</h1> 
+                    </div>
+                    <section class="lang">
+                       
+                        <div class="lang-content">
+        
+                            <div>
+                                <img src="./output/images/kaun tujhe 4.jpeg">
+                                <p>Kaun Tujhe</p>
+                                <p>2023</p>
+                            </div>
+                            <div>
+                                <img src="./output/images/Besharam_Rang_.jpeg">
+                                <p>Besharam Rang</p>
+                                <p>2013</p>
+                            </div>
+                            <div>
+                                <img src="./output/images/baarish.jpeg">
+                                <p>Baarish</p>
+                                <p>2024</p>
+                            </div>
+                            <div>
+                                <img src="./output/images/Galiyan 2.jpeg">
+                                <p>Galiyan</p>
+                                <p>2023</p>
+                            </div>
+                            <div>
+                                <img src="./output/images/Khuda bhi 1.jpeg">
+                                <p>Khuda Bhi</p>
+                                <p>2023</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Playlist Section -->
+                <aside class="queues">
+                 
+                    <div class="head">
+                        <h1>Queue</h1>
+                        
+                        <span class="queue">
+                            <label for="queue-checkbox"> Queue  <i class="fas fa-chevron-circle-down"></i></label>
+                            <input type="checkbox" id="queue-checkbox">
+                            <div class="dropdown">
+                                <div class="dropdownitem">
+                                    <p> <a href="./Playlist.html">Playlist</a></p>
+                                </div>
+                                <hr>
+                                <div class="dropdownitem">
+                                    <p><a href="#" ">Favourite Songs</a></p>
+                                </div>
+                                
+                            </div>
+                            
+                        </span>
+                    </div>
+                    <ul class="song-list">
+                        <li class="song-item">
+                            <img src="./output/images/animal jason.webp" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Animal</h3>
+                                <p>Jason</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/baarish.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>baarish</h3>
+                                <p>Atif Aslam</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/aleksandr-popov-hTv8aaPziOQ-unsplash.jpg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Rock</h3>
+                                <p>Aleksandr-popov</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/ARIJIT.webp" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Hum Mar jayenge</h3>
+                                <p>Arjit Singh</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/Galiyan 2.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Galiyan</h3>
+                                <p>Arjit Singh</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/guru-randhawa-red-jacket-g2s9rthapd9hbjzw.jpg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Red Jacket</h3>
+                                <p>Guru Randhawa</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/Pehle bhi 1.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Pehle bhi</h3>
+                                <p>Raj Shekhar and Vishal Mishra
+                                </p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/Besharam_Rang_.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Besharam_Rang</h3>
+                                <p>Vishal–Shekhar</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/animal jason.webp" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Animal</h3>
+                                <p>Jason</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/baarish.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>baarish</h3>
+                                <p>Atif Aslam</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/aleksandr-popov-hTv8aaPziOQ-unsplash.jpg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Rock</h3>
+                                <p>Aleksandr-popov</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/ARIJIT.webp" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Hum Mar jayenge</h3>
+                                <p>Arjit Singh</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/Galiyan 2.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Galiyan</h3>
+                                <p>Arjit Singh</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/guru-randhawa-red-jacket-g2s9rthapd9hbjzw.jpg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Red Jacket</h3>
+                                <p>Guru Randhawa</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/Pehle bhi 1.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Pehle bhi</h3>
+                                <p>Raj Shekhar and Vishal Mishra
+                                </p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                        <li class="song-item">
+                            <img src="./output/images/Besharam_Rang_.jpeg" alt="Song Image">
+                            <div class="song-info">
+                                <h3>Besharam_Rang</h3>
+                                <p>Vishal–Shekhar</p>
+                            </div>
+                            <button class="like-button"><i class="fa fa-heart"></i></button>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </main>
+        <!-- Player Section -->
+        <footer class="now-playing">
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+            <div class="album-cover">
+                <img src="./output/images/Galiyan 2.jpeg" alt="Album Cover">
+            </div>
+            <div class="song-info">
+                <h2>Galliyan (गलियां)</h2>
+                <h4>Ankit Tiwari</h4>
+            </div>
+            <div class="player">   
+                <audio controls autoplay muted id="song">
+                    <source src="./songs/music.mp3" type="audio/mp3">
+                </audio>
+                <div class="controls">
+                    <button class="control-button prev"><i class="fa-solid fa-backward" style="color: #ffffff;"></i></button>
+                    <button class="control-button next"><i class="fa-solid fa-forward" style="color: #ffffff;"></i></button>
+                    
+                    <button class="control-button shuffle"><i class="fa-solid fa-shuffle" style="color: #ffffff;"></i></button>
+                    <button class="control-button"><i class="fa-solid fa-clipboard-list" style="color: #ffffff;"></i></button>
+                </div>
+            </div> 
+        </footer>
+    </div>
+    </div>
+    <!-- <script src="./songs.js"></script> -->
+</body>
+</html>
